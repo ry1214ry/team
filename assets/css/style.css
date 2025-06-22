@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+  /* background-color: lavender; */
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-1 {
+  width: 8.333333333333333%;
+}
+.col-2 {
+  width: 16.66666666666667%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33333333333333%;
+}
+.col-5 {
+  width: 41.66666666666667%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33333333333333%;
+}
+.col-8 {
+  width: 66.66666666666667%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33333333333333%;
+}
+.col-11 {
+  width: 91.66666666666667%;
+}
+.col-12 {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background-color: rgb(56, 51, 51);
+}
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar {
+  /* position: sticky;
+  top: 0; */
+  background-color: black;
+  /* box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.884); */
+}
+.navbar-brand {
+  color: #4da8da;
+  font-size: 32px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
+}
+.navbar-nav .nav-link {
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 20px 15px;
+  display: block;
+  transition-duration: 0.3s;
+  border-radius: 10px;
+  color: white;
+}
+.navbar-nav .nav-link:hover {
+  background-color: #4da8da;
+  color: white;
+}
+.group-btn a {
+  text-decoration: none;
+  border: none;
+  border: 2px solid #4da8da;
+  padding: 10px 17px;
+  border-radius: 50px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.sign-in {
+  background-color: #4da8da;
+  color: white;
+}
+.sign-up {
+  margin-left: 15px;
+  color: #4da8da;
+}
+.sign-up:hover {
+  background-color: #4da8da;
+  color: white;
+}
+.hero-banner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+}
+img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+.group-text {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  color: white;
+}
+.group-text h1 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.group-text p {
+  line-height: 25px;
+  font-size: 15px;
+  margin-bottom: 50px;
+  text-transform: capitalize;
+  color: rgb(230, 227, 227);
+}
+.banner-btn a {
+  text-decoration: none;
+  border: none;
+  border: 2px solid #4da8da;
+  padding: 10px 17px;
+  border-radius: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.btn-our {
+  color: white;
+  background-color: #4da8da;
+}
+.btn-donate {
+  color: #4da8da;
+  margin-left: 20px;
+}
+
+.uniteds {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.uniteds h2 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 35px;
+}
+.card {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 2px 3px gainsboro;
+}
+.card-img {
+  width: 100%;
+  background-color: white;
+  padding: 5px 50px;
+  overflow: hidden;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  border-radius: 50%;
+}
+.card-body {
+  text-align: center;
+  padding: 20px;
+}
+.card-body h4 {
+  color: gray;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.card-body h2 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.card-body p {
+  color: gray;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+.row {
+  margin: -10px;
+}
+.col-4 {
+  padding: 10px;
+}
+.become {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  text-align: center;
+  background-color: #4da8da;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+}
+.become h2 {
+  font-size: 40px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.become p {
+  margin-bottom: 40px;
+  display: block;
+}
+.become a {
+  text-decoration: none;
+  border: none;
+  border: 2px solid #4a85a5;
+  padding: 10px 17px;
+  border-radius: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.recent {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.recent h2 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+.card-project {
+  width: 100%;
+  height: 100%;
+}
+.card-project img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.latest {
+  /* margin-top: 70px;
+  margin-bottom: 70px; */
+  padding: 70px 0;
+  background-color: rgba(76, 101, 110, 0.055);
+}
+.latest h2 {
+  text-align: center;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  padding: 60px 0;
+  overflow: hidden;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.main-text {
+  padding: 60px 0;
+}
+.main1-text {
+  padding: 40px 50px;
+  background-color: rgba(255, 255, 255, 0.877);
+  border-radius: 10px;
+}
+.main1-text span {
+  margin-bottom: 50px;
+  color: #4da8da;
+  display: block;
+}
+.main1-text h3 {
+  margin-bottom: 50px;
+  text-transform: capitalize;
+  font-size: 22px;
+  line-height: 30px;
+}
+.main1-text p {
+  margin-bottom: 50px;
+  line-height: 30px;
+  color: gray;
+}
+.group-action {
+  margin-bottom: 50px;
+}
+.btn-8 {
+  text-decoration: none;
+  color: #4da8da;
+}
+.read-more {
+  color: black;
+  margin-left: 25px;
+  text-transform: capitalize;
+}
+
+.row {
+  margin: -0 -10px;
+}
+.col-6 {
+  padding: 0 10px;
+}
+.in-touch {
+  margin-top: 50px;
+  margin-bottom: 70px;
+  padding-left: 25%;
+}
+.forms {
+  /* background-color: rgba(184, 177, 177, 0.637); */
+  width: 600px;
+  height: 500px;
+  /* border-radius: 10px; */
+}
+.form-get {
+  padding: 30px;
+  box-shadow: 0 0 2px 2px rgba(153, 150, 150, 0.664);
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.315);
+}
+.form-get h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.group-input {
+  width: 100%;
+}
+label {
+  font-size: 17px;
+  margin-bottom: 8px;
+  display: block;
+  text-transform: capitalize;
+}
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+}
+::placeholder {
+  font-size: 14px;
+  padding: 0 10px;
+  text-transform: capitalize;
+}
+.txt-ara {
+  width: 100%;
+  padding: 25px 0;
+  border-radius: 10px;
+}
+.submint {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 50px;
+  border: none;
+  background-color: #4da8da;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 17px;
+  cursor: pointer;
+}
+.row {
+  margin: -12px 0;
+}
+.col-12 {
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+/* ====================footer================= */
+.get-in-touch {
+  background-color: black;
+  padding: 40px 0;
+  color: white;
+}
+.get-logo h2 {
+  font-size: 25px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.get-logo p {
+  font-size: 15px;
+  line-height: 25px;
+}
+.quick p {
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.quick span {
+  margin-bottom: 3px;
+  display: block;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.touch p {
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-bottom: 15px;
+  display: block;
+}
+hr {
+  display: block;
+  margin-bottom: 20px;
+}
+.touch span {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
